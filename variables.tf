@@ -46,6 +46,12 @@ variable "key_name" {
   default     = "user1"
 }
 
+variable "private_key_file" {
+  description = "The provisioner remote-exec private_key."
+  type        = string
+  default     = "~/user1.pem"
+}
+
 variable "monitoring" {
   description = "If true, the launched EC2 instance will have detailed monitoring enabled."
   type        = bool
